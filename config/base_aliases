@@ -1,5 +1,8 @@
 #!/bin/bash 
 
+# some more ls aliases
+alias ll='ls -alFh'
+alias la='ls -Ah'
 alias less='less -r'       # raw control characters
 alias vi=vim
 alias ci=vi                # Common mistype with disasterous consequences.
