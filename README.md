@@ -1,6 +1,7 @@
 # dotfiles
 Configuration files for Linux.
 
+| | |
 |--------------|-----------------------------------------------------------------------|
 |`config`      | Files defining the configuration settings for the environment. |
 |`scripts`     | Common scripts. |
