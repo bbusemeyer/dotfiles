@@ -1,6 +1,8 @@
 # dotfiles
 Configuration files for Linux.
 
+Use `link.sh` to setup environment. 
+
 | directory    | Usage |
 |--------------|-----------------------------------------------------------------------|
 |`config`      | Files defining the configuration settings for the environment. |
