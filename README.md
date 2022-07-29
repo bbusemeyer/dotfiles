@@ -2,6 +2,7 @@
 Configuration files for Linux.
 
 Use `link.sh` to setup environment. 
+Use `purge.sh` to move the configuration files that `link.sh` tries to link into `/tmp`.
 
 | directory    | Usage |
 |--------------|-----------------------------------------------------------------------|

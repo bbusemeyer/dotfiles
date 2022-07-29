@@ -1,12 +1,11 @@
 
 # Edit this to specialize the Bash environment to a specific computer.
-bash_prefix='ccqlin023'
+bash_prefix='base'
 
-echo "Linking configurations to '${HOME}'."
-
-ln -vs config/${bash_prefix}_bashrc ${HOME}/.bashrc
-ln -vs config/${bash_prefix}_aliases ${HOME}/.bash_aliases
-for fn in vimrc inputrc gitconfig gitignore_global
+wd=`pwd`
+ln -vs ${wd}/config/${bash_prefix}_bashrc ${HOME}/.bashrc
+ln -vs ${wd}/config/${bash_prefix}_aliases ${HOME}/.bash_aliases
+for fn in bash_profile vimrc inputrc gitconfig gitignore_global
 do
-  ln -vs config/${fn} ${HOME}/.${fn}
+  ln -vs ${wd}/config/${fn} ${HOME}/.${fn}
 done
