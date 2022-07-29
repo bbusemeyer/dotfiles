@@ -1,0 +1,11 @@
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+\usepackage{mycommands}
+
+\setlength{\textwidth}{10in}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0in}
+\setlist[enumerate]{itemsep=0pt}
+\setlist[itemize]{itemsep=0pt}
