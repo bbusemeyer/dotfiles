@@ -1,4 +1,5 @@
 #!/bin/bash
+# NOTE: This all should be ported into modulefiles at some point!
 
 source ~/tools/misc/base_bashrc
 

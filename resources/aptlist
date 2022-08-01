@@ -25,3 +25,4 @@ python3-setuptools
 libfreetype6
 ttf-mscorefonts-installer
 zsh
+neovim
