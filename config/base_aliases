@@ -19,6 +19,7 @@ alias qs='qstat -a'
 alias dc='cd ..'
 alias update="sudo apt-get update; sudo apt-get dist-upgrade -y ; sudo apt-get autoremove -y"
 alias mod="module"
+alias clangd="clangd-10"
 
 # Exporting functions makes them available outside the command line.
 function py { 

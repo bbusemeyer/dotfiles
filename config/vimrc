@@ -49,16 +49,6 @@ autocmd BufRead,BufNewFile *.jl      set filetype=julia
 
 set omnifunc=LaTeXtoUnicode#omnifunc
 
-" Fix python fuck around.
-function! SetupPython()
-    " Here, you can have the final say on what is set.  So
-    " fixup any settings you don't like.
-    setlocal softtabstop=2
-    setlocal tabstop=2
-    setlocal shiftwidth=2
-endfunction
-command! -bar SetupPython call SetupPython()
-
 filetype plugin indent on
 autocmd FileType tex setlocal wrap spell
 autocmd FileType text setlocal wrap spell
