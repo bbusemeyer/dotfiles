@@ -1,5 +1,6 @@
-# Aliases.
+# Shell customizations for bash or zsh. 
 
+# Aliases.
 alias ll='ls -alFh'
 alias la='ls -Ah'
 alias less='less -r'       # raw control characters

@@ -1,3 +1,6 @@
 [submodule "config/dotvim/autoload/vim-plug"]
 	path = config/dotvim/autoload/vim-plug
 	url = git@github.com:junegunn/vim-plug.git
+[submodule "config/oh-my-zsh"]
+	path = config/oh-my-zsh
+	url = git@github.com:Wentzell/oh-my-zsh.git
