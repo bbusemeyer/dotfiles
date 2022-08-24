@@ -3,7 +3,7 @@
 cwd=`pwd`
 cd ../config
 wd=`pwd`
-for fn in gitignore gitconfig_global shrc zshrc oh-my-zsh
+for fn in gitignore gitconfig_global shrc zshrc oh-my-zsh inputrc
 do
   ln -vs ${wd}/${fn} ${HOME}/.${fn}
 done
