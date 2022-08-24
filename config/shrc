@@ -1,3 +1,4 @@
+#!/bin/sh
 # Shell customizations for bash or zsh. 
 
 # Aliases.
@@ -14,7 +15,6 @@ alias gpp='g++'
 alias tarp='tar --use-compress-program=pigz'
 alias mcrypt='mcrypt -u'
 alias rsync='rsync --progress'
-alias qs='qstat -a'
 alias dc='cd ..'
 alias update="sudo apt-get update; sudo apt-get dist-upgrade -y ; sudo apt-get autoremove -y"
 alias mod="module"
