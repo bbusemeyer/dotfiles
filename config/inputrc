@@ -39,7 +39,5 @@ $endif
 # "\e[H": beginning-of-line
 # "\e[F": end-of-line
 
-$endif
-
-set mark-symlinked-directories on
+#set mark-symlinked-directories on
 set expand-tilde on
