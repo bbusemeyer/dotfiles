@@ -32,3 +32,6 @@ export MODULEPATH=${HOME}/soft/modulefiles:${MODULEPATH}
 # Globus shortcuts.
 gflat='c3dc2ae2-74c6-11e8-93bb-0a6d4e044368'
 gsdsc='f327a108-b5cd-11e8-8241-0a3b7ca8ce66'
+
+# active python venv
+source ${HOME}/.venv/bin/activate
