@@ -3,6 +3,7 @@ scipy
 matplotlib
 pandas
 seaborn
-sklearn
+scikit-learn
 ipython
 jupyter
+plotly

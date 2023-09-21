@@ -14,7 +14,8 @@ if [ -f ~/.shrc ]; then
     . ~/.shrc
 fi
 
-source /etc/modules/init/zsh
+# Empty in my current OS and ZSH is still functioning. Might be uncommented later.
+#source /etc/modules/init/zsh
 
 setopt extendedglob
 
