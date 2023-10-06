@@ -1,24 +1,8 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2008 Dec 17
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
-
 " snakemake
 au BufNewFile,BufRead Snakefile set syntax=snakemake
 au BufNewFile,BufRead *.smk set syntax=snakemake
 
-"########### End of settings for Vundle to work ############
-"###########################################################
-"
 " Use Vim settings, rather than Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
 set nocompatible
 
 " allow backspacing over everything in insert mode
@@ -27,25 +11,12 @@ set backspace=indent,eol,start
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
-" CTRL-U in insert mode deletes a lot.  Use CTRL-G u to first break undo,
-" so that you can undo CTRL-U after inserting a line break.
-inoremap <C-U> <C-G>u<C-U>
-
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
   syntax on
   set hlsearch
 endif
-
-" Julia filetype detection.
-if v:version < 704
-  " NOTE: this line fixes an issue with the default system-wide lisp ftplugin
-  "       which didn't define b:undo_ftplugin on older Vim versions
-  "       (*.jl files are recognized as lisp)
-  autocmd BufRead,BufNewFile *.jl    let b:undo_ftplugin = "setlocal comments< define< formatoptions< iskeyword< lisp<"
-endif
-autocmd BufRead,BufNewFile *.jl      set filetype=julia
 
 set omnifunc=LaTeXtoUnicode#omnifunc
 
@@ -72,3 +43,8 @@ set t_Co=256       " Number of colors available.
 
 set background=light
 "colorscheme mydelek
+
+" https://github.com/junegunn/vim-plug
+call plug#begin()
+  Plug 'neovim/nvim-lspconfig'
+call plug#end()

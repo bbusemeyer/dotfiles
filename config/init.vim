@@ -2,6 +2,10 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 
+lua << EOF
+  require'lspconfig'.pylsp.setup{} -- pip install 'python-lsp-server[all]'
+EOF
+
 " Nothing in language server works anymore.
 "" ---- Language Server Setup -----
 "
