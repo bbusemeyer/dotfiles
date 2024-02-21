@@ -1,4 +1,4 @@
-vim
+neovim
 ssh
 texlive-publishers
 texlive-latex-base
@@ -12,9 +12,6 @@ libopenmpi-dev
 libblas-dev
 liblapack-dev
 mcrypt
-ipython
-mercurial
-gfortran
 python-setuptools
 libfreetype6-dev
 gparted
@@ -25,4 +22,3 @@ python3-setuptools
 libfreetype6
 ttf-mscorefonts-installer
 zsh
-neovim
