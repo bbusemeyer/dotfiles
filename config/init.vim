@@ -2,6 +2,12 @@ set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
 source ~/.vimrc
 
+call plug#begin()
+
+Plug 'neovim/nvim-lspconfig'
+
+call plug#end()
+
 source $DOTFILES/config/lspsetup.lua
 
 " Additional LSP settings
@@ -13,7 +19,7 @@ function! ToggleDiagnostics()
     lua vim.diagnostic.disable()
   else
     echo "Diagnostics On"
-    let g:diagnostics_is_on=1
+    let g:diagnostics_is_on=1neovim/nvim-lspconfig
     lua vim.diagnostic.enable()
   endif
 endfunction
@@ -33,8 +39,8 @@ autocmd Syntax c,cpp,python,julia,sh,json xnoremap <buffer> <C-h> :lua vim.lsp.b
 autocmd Syntax c,cpp,python,julia,sh,json nnoremap <buffer> == :lua vim.lsp.buf.formatting()<CR>
 autocmd Syntax c,cpp,python,julia,sh,json xnoremap <buffer> == :lua vim.lsp.buf.range_formatting()<CR>
 autocmd Syntax c,cpp,python,julia,sh,json nnoremap <buffer> <leader><leader>f :lua vim.lsp.buf.code_action()<CR>
-
-autocmd Syntax c,cpp nnoremap <Leader>of :ClangdSwitchSourceHeader<cr>
+"
+"autocmd Syntax c,cpp nnoremap <Leader>of :ClangdSwitchSourceHeader<cr>
 
 " Other useful lsp commands
 "vim.lsp.diagnostic.goto_prev()
