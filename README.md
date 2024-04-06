@@ -1,8 +1,8 @@
 # dotfiles
-Configuration files for Linux.
+Programming environment for Linux.
 
-Use `link.sh` to setup environment. 
-Use `purge.sh` to move the configuration files that `link.sh` tries to link into `/tmp`.
+Use `make install` to soft link all config files.
+Use `make uninstall` to clear all config files (warning: this will rm your config files).
 
 | directory    | Usage |
 |--------------|-----------------------------------------------------------------------|
