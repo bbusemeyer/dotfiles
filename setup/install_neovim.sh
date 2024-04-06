@@ -1,10 +1,7 @@
-cwd=`pwd`
-cd ${HOME}/soft
-git clone https://github.com/neovim/neovim
-git checkout release-0.7
-sudo apt-get install ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen
-mkdir install
-make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=`pwd`/install
-make install
-cd $cwd
+# neovim that ships with Ubuntu is insanely old. Need to use special install to do it. 
 
+wget https://github.com/neovim/neovim/releases/download/v0.9.5/nvim-linux64.tar.gz
+tar xzf nvim-linux64.tar.gz
+rm nvim-linux64.tar.gz
+mv nvim-linux64 ~/soft
+ln -s ~/soft/nvim-linux64/bin/nvim ~/.local/bin
