@@ -4,11 +4,10 @@
 alias ll='ls -alFh'
 alias la='ls -Ah'
 alias less='less -r'       # raw control characters
-alias vi=vim
+alias vi=nvim
 alias ci=vi                # Common mistype with disasterous consequences.
 alias grep='grep --color'  # show differences in colour
 alias date='date "+%F"' 
-#alias ipython='ipython3'
 alias tra='trash'
 alias gpp='g++'
 alias tp='trash-put'
@@ -20,16 +19,7 @@ alias dc='cd ..'
 alias update="sudo apt-get update; sudo apt-get dist-upgrade -y ; sudo apt-get autoremove -y"
 alias mod="module"
 alias clangd="clangd-10"
-
-# Exporting functions makes them available outside the command line.
-function py { 
-  python3 -u $@ 
-}
-export -f py
-function py2 { 
-  python2 -u $@ 
-}
-export -f py2
+alias py='python3 -u'
 
 # git shortcuts.
 alias gs='git status'
@@ -37,7 +27,3 @@ alias gc='git commit'
 alias gp='git push'
 alias ga='git add'
 alias gd='git diff'
-
-# Globus shortcuts.
-gflat='c3dc2ae2-74c6-11e8-93bb-0a6d4e044368'
-gsdsc='f327a108-b5cd-11e8-8241-0a3b7ca8ce66'
