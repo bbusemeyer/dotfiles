@@ -19,7 +19,7 @@ function! ToggleDiagnostics()
     lua vim.diagnostic.disable()
   else
     echo "Diagnostics On"
-    let g:diagnostics_is_on=1neovim/nvim-lspconfig
+    let g:diagnostics_is_on=1
     lua vim.diagnostic.enable()
   endif
 endfunction
