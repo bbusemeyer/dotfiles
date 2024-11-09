@@ -19,7 +19,9 @@ alias qs='qstat -a'
 alias dc='cd ..'
 alias update="sudo apt-get update; sudo apt-get dist-upgrade -y ; sudo apt-get autoremove -y"
 alias mod="module"
+alias python='python3'
 alias py='python3 -u'
+alias pyvenv='source ~/.venv/bin/activate'
 
 # git shortcuts.
 alias gs='git status'
