@@ -1,3 +1,6 @@
+python3-setuptools
+python3-pip
+python3-dev
 ssh
 texlive-publishers
 texlive-latex-base
@@ -11,13 +14,9 @@ libopenmpi-dev
 libblas-dev
 liblapack-dev
 mcrypt
-python-setuptools
 libfreetype6-dev
 gparted
 git
-python3-pip
-python3-dev
-python3-setuptools
 libfreetype6
 ttf-mscorefonts-installer
 zsh
