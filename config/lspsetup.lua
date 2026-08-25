@@ -1,4 +1,12 @@
 
+-- For copilot.
+vim.keymap.set('i', '<C-Space>', 'copilot#Accept("\\<CR>")', {
+  expr = true,
+  replace_keycodes = false
+})
+vim.g.copilot_no_tab_map = true
+
+
 vim.lsp.set_log_level("debug")
 require'lspconfig'.clangd.setup({
   cmd       = { 'clangd', '--all-scopes-completion', '--background-index', '--completion-style=bundled', '--header-insertion=iwyu', '--clang-tidy' };
@@ -11,7 +19,7 @@ require'lspconfig'.pylsp.setup{
     pylsp = {
       plugins = {
         pycodestyle = {
-          ignore = {'E501'},
+          ignore = {'E501','E226'},
         }
       }
     }

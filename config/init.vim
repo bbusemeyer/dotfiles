@@ -5,6 +5,7 @@ source ~/.vimrc
 call plug#begin()
 
 Plug 'neovim/nvim-lspconfig'
+Plug 'github/copilot.vim'
 
 call plug#end()
 
@@ -33,7 +34,7 @@ endfunction
 autocmd Syntax c,cpp,python,julia,sh,json call DiagnosticsSetup()
 
 autocmd Syntax c,cpp,python,julia,sh,json nnoremap <buffer> <C-]> :lua vim.lsp.buf.definition()<CR>
-autocmd Syntax c,cpp,python,julia,sh,json xnoremap <buffer> <C-]> :lua vim.lsp.buf.definition()<CR>
+autocmd Syntax c,cpp,python,julia,sh,json xnoremap <buffer> <C-]> :lua vim.lsp.buf.definition()<CR>github/copilot.vim
 autocmd Syntax c,cpp,python,julia,sh,json nnoremap <buffer> <C-h> :lua vim.lsp.buf.rename()<CR>
 autocmd Syntax c,cpp,python,julia,sh,json xnoremap <buffer> <C-h> :lua vim.lsp.buf.rename()<CR>
 autocmd Syntax c,cpp,python,julia,sh,json nnoremap <buffer> == :lua vim.lsp.buf.formatting()<CR>

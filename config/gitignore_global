@@ -60,3 +60,13 @@ __pycache___
 *.gz
 *.pkl
 *.pickle
+
+
+############################ Other
+
+# Ipython temp files
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Tetsting
+mytests/
